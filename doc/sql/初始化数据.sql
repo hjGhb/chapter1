@@ -1,0 +1,11 @@
+-- 创建客户表
+CREATE TABLE customer(
+
+  id BIGINT AUTO_INCREMENT NOT NULL COMMENT 'id(自增主键)',
+  NAME VARCHAR(255) NOT NULL COMMENT '客户名称',
+  contact VARCHAR(255) NOT NULL COMMENT '联系人',
+  telephone VARCHAR(255) COMMENT '电话号码',
+  email VARCHAR(255) COMMENT '邮箱地址',
+  remark TEXT COMMENT '备注',
+  PRIMARY KEY(id)
+)engine=INNODB DEFAULT CHARSET=UTF8 COMMENT='客户表';
